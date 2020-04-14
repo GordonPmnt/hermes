@@ -1,12 +1,14 @@
-var port = chrome.runtime.connect();
+var greeting = "hola, ";
+console.log('pouet')
 
-window.addEventListener("message", function(event) {
-  // We only accept messages from ourselves
-  if (event.source != window)
-    return;
+var classes = document.getElementsByClassName("secondary");
 
-  if (event.data.type && (event.data.type == "FROM_PAGE")) {
-    console.log("Content script received: " + event.data.text);
-    port.postMessage(event.data.text);
-  }
+classes.forEach(element => {
+    console.log(element)
+});
+
+
+
+button.addEventListener("click", function() {
+    alert(greeting + button.person_name + ".");
 }, false);
