@@ -18,3 +18,12 @@ The aim of this project is to add little features in order to make the process e
 
 // TO BE DEFINED
 
+Once installed, you should see a new icon appeared on the top left corner your browser.
+The icon is grey because the extension is not active
+
+![](ressources/inasctive.png)
+
+Now, if you to Odissey website, the icon should appear colored which means that the extension properly works. You have nothing more to do, the extension is now listening on Odissey. Relax and enjoy !
+
+![](ressources/active.png)
+
