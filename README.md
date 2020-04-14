@@ -13,17 +13,19 @@ The aim of this project is to add little features in order to make the process e
 ### Prerequisites
 
 * Chrome browser
+* Chrome extension doc: https://developer.chrome.com/extensions/overview
 
 ### Installing
 
-// TO BE DEFINED
+// --- coming soon --- //
 
-Once installed, you should see a new icon appeared on the top left corner your browser.
+Once installed, you should see a new icon appearing on the top left corner of your browser.
 The icon is grey because the extension is not active
 
 ![](ressources/inasctive.png)
 
-Now, if you go to Odissey website, the icon should appear colored which means that the extension properly works. You have nothing more to do, the extension is now listening on Odissey. Relax and enjoy !
+
+Now, if you go to Odissey website, the icon should appear colored, which means the extension properly works. You have nothing more to do, the extension is now listening on Odissey. Relax and enjoy !
 
 ![](ressources/active.png)
 
