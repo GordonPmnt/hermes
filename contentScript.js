@@ -13,6 +13,7 @@ window.addEventListener('load', function () {
         var element = document.createElement("button");
         var content = document.createTextNode("Copy");
         element.appendChild(content);
+        element.id = "easy-bbtn-1";
 
         odisseySol.appendChild(element);
         
