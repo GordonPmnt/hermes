@@ -6,26 +6,19 @@
     "icons": {
       "128": "./ressources/icon-WCS.png"
     },
-    "background": {
-      "persistent": false,
-      "scripts": ["background.js"]
-    },
     "permissions": [
         "https://*.google.com/", 
-        "http://*.odyssey.wildcodeschool.com/" , 
+        "http://*.odyssey.wildcodeschool.com/*" , 
         "activeTab", "storage", 
         "declarativeContent"
     ],
     "content_scripts": [
         {
-          "matches": ["http://*.odyssey.wildcodeschool.com/*"],
-          "include_globs": ["*odyssey.wildcodeschool.com/???s/*"],
+          "matches": ["https://*.odyssey.wildcodeschool.com/*"],
+          "include_globs": ["*odyssey.wildcodeschool.com/*"],
           "run_at": "document_idle",
+          "all_frames": true,
           "js": ["contentScript.js"]
         }
-      ],
-    "page_action": {
-      "default_icon": "./ressources/icon-WCS.png",
-      "default_popup": "popup.html"
-    }
+    ]
 }
