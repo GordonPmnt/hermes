@@ -9,6 +9,12 @@ window.addEventListener('load', function () {
         var odisseySol = odisseySideMenu.childNodes[2]
         var odisseyrSolUrl = odisseySol.childNodes[1]
 
+        var para = document.createElement("button");
+        var node = document.createTextNode("Copy");
+        para.appendChild(node);
+
+        odisseySol.appendChild(para);
+        
         odisseySol.addEventListener("click", function() {
             var text = odisseyrSolUrl.textContent;
             document.execCommand('copy', text);
