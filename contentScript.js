@@ -1,14 +1,9 @@
-var greeting = "hola, ";
-console.log('pouet')
+window.addEventListener('load', function () {
+    var odisseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
+    var odisseySol = odisseySideMenu.childNodes[2]
 
-var classes = document.getElementsByClassName("secondary");
+    odisseySol.addEventListener("click", function() {
+        alert(odisseySol.textContent);
+    }, false);
 
-classes.forEach(element => {
-    console.log(element)
-});
-
-
-
-button.addEventListener("click", function() {
-    alert(greeting + button.person_name + ".");
-}, false);
+})
