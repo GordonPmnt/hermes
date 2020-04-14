@@ -9,7 +9,8 @@
     "permissions": [
         "https://*.google.com/", 
         "http://*.odyssey.wildcodeschool.com/*" , 
-        "activeTab", "storage", 
+        "activeTab", 
+        "storage", 
         "declarativeContent"
     ],
     "content_scripts": [

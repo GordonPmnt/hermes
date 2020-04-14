@@ -1,9 +1,16 @@
 window.addEventListener('load', function () {
-    var odisseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
-    var odisseySol = odisseySideMenu.childNodes[2]
 
-    odisseySol.addEventListener("click", function() {
-        alert(odisseySol.textContent);
-    }, false);
+    /* 
+        This block will be executed only if user is on the following URL: 
+        https://odyssey.wildcodeschool.com/quests/:questId/challenge   
+    */
+    if(document.getElementsByClassName("challenge__side__menu")[0]) {
+        var odisseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
+        var odisseySol = odisseySideMenu.childNodes[2]
+
+        odisseySol.addEventListener("click", function() {
+            alert(odisseySol.textContent);
+        }, false);
+    };
 
 })
