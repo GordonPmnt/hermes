@@ -23,7 +23,7 @@ The icon is grey because the extension is not active
 
 ![](ressources/inasctive.png)
 
-Now, if you to Odissey website, the icon should appear colored which means that the extension properly works. You have nothing more to do, the extension is now listening on Odissey. Relax and enjoy !
+Now, if you go to Odissey website, the icon should appear colored which means that the extension properly works. You have nothing more to do, the extension is now listening on Odissey. Relax and enjoy !
 
 ![](ressources/active.png)
 
