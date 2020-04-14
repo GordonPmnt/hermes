@@ -1,0 +1,20 @@
+{
+    "name": "Odissey easy share",
+    "version": "1",
+    "description": "Allows to easily share solutions URL's.",
+    "icons": {
+      "128": "icon_16.png",
+      "128": "icon_32.png",
+      "128": "icon_48.png",
+      "128": "icon_128.png"
+    },
+    "background": {
+      "persistent": false,
+      "scripts": ["background_script.js"]
+    },
+    "permissions": ["https://*.google.com/", "activeTab"],
+    "browser_action": {
+      "default_icon": "icon_16.png",
+      "default_popup": "popup.html"
+    }
+  }
