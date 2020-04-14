@@ -21,7 +21,7 @@ window.addEventListener('load', function () {
 
             navigator.clipboard.writeText(text)
             .then(() => {
-                alert(text);
+                console.log('Copied to clipboard:', text);
             })
             .catch(err => {
                 alert(`
