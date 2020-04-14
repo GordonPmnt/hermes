@@ -4,11 +4,11 @@
     "version": "1",
     "description": "Allows to easily share solutions URL's.",
     "icons": {
-      "wcs": "./ressources/icon-WCS.png"
+      "128": "./ressources/icon-WCS.png"
     },
     "background": {
       "persistent": false,
-      "scripts": ["background_script.js"]
+      "scripts": ["background.js"]
     },
     "permissions": ["https://*.google.com/", "activeTab"],
     "browser_action": {
