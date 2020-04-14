@@ -23,6 +23,15 @@ window.addEventListener('load', function () {
             navigator.clipboard.writeText(text)
             .then(() => {
                 console.log('Copied to clipboard:', text);
+                var button = document.getElementById("easy-bbtn-1");
+                button.style = "color: grey"
+                button.textContent = "...copied"
+                
+                setTimeout(() => { 
+                    button.textContent = "Copy"
+                    button.style = ""
+                    }, 2000
+                );
             })
             .catch(err => {
                 console.log(err);
