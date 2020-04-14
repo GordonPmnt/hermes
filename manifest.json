@@ -10,8 +10,8 @@
       "persistent": false,
       "scripts": ["background.js"]
     },
-    "permissions": ["https://*.google.com/", "activeTab", "storage"],
-    "browser_action": {
+    "permissions": ["https://*.google.com/", "activeTab", "storage", "declarativeContent"],
+    "page_action": {
       "default_icon": "./ressources/icon-WCS.png",
       "default_popup": "popup.html"
     }
