@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Odissey easy share",
-    "version": "1",
+    "version": "1.0.0",
     "description": "Allows to easily share solutions URL's.",
     "icons": {
       "128": "./ressources/icon-WCS.png"
