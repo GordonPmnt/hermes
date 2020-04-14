@@ -25,10 +25,11 @@ window.addEventListener('load', function () {
                 console.log('Copied to clipboard:', text);
             })
             .catch(err => {
+                console.log(err);
                 alert(`
                     Could not copy, please check whether your 
                     system denies clipboard permissions`
-                )
+                );
             });
         }, false);
     };
