@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
         var odisseyrSolUrl = odisseySol.childNodes[1]
 
         odisseySol.addEventListener("click", function() {
-            var text = odisseySol.textContent;
+            var text = odisseyrSolUrl.textContent;
             document.execCommand('copy', text);
         }, false);
     };
