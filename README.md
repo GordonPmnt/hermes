@@ -8,7 +8,7 @@ The aim of this project is to add little features in order to make the process e
 
 * Link to your solution is now copied in your clipboard with a single click. You don't have to manually select and copy the URL anymore.
 
-
+![](ressources/feature1.png)
 
 ## Getting Started
 
