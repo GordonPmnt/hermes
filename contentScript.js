@@ -7,9 +7,11 @@ window.addEventListener('load', function () {
     if(document.getElementsByClassName("challenge__side__menu")[0]) {
         var odisseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
         var odisseySol = odisseySideMenu.childNodes[2]
+        var odisseyrSolUrl = odisseySol.childNodes[1]
 
         odisseySol.addEventListener("click", function() {
-            alert(odisseySol.textContent);
+            var text = odisseySol.textContent;
+            document.execCommand('copy', text);
         }, false);
     };
 
