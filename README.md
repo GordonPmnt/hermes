@@ -19,7 +19,18 @@ The aim of this project is to add little features in order to make the process e
 
 ### Installing
 
-// --- coming soon --- //
+* Create a local clone of the project on your device
+* Open your Chrome browser
+* Goto: window > extensions
+* enable developer mode
+* select "Load Unpacked"
+* load your local repo. 
+
+It's done !
+
+
+![](https://developer.chrome.com/static/images/get_started/load_extension.png)
+
 
 Once installed, you should see a new icon appearing on the top left corner of your browser.
 The icon is grey because the extension is not active
