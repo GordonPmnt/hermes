@@ -7,10 +7,6 @@
       "128": "./ressources/icon-WCS.png"
     },
     "permissions": [
-        "http://*.odyssey.wildcodeschool.com/*" , 
-        "activeTab", 
-        "storage", 
-        "declarativeContent"
     ],
     "content_scripts": [
         {
