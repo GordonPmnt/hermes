@@ -15,7 +15,6 @@ The aim of this project is to add little features in order to make the process e
 ### Prerequisites
 
 * Chrome browser
-* Chrome extension doc: https://developer.chrome.com/extensions/overview
 
 ### Installing
 
