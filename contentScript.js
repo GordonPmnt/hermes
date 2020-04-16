@@ -6,19 +6,19 @@ window.addEventListener('load', function () {
     */
    
     if(document.getElementsByClassName("challenge__side__menu")[0]) {
-        var odisseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
-        var odisseySol = odisseySideMenu.childNodes[2]
-        var odisseyrSolUrl = odisseySol.childNodes[1]
+        var odysseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
+        var odysseySol = odysseySideMenu.childNodes[2]
+        var odysseyrSolUrl = odysseySol.childNodes[1]
 
         var element = document.createElement("button");
         var content = document.createTextNode("Copy");
         element.appendChild(content);
         element.id = "easy-bbtn-1";
 
-        odisseySol.appendChild(element);
+        odysseySol.appendChild(element);
         
         element.addEventListener("click", function() {
-            var text = odisseyrSolUrl.textContent;
+            var text = odysseyrSolUrl.textContent;
 
             navigator.clipboard.writeText(text)
             .then(() => {
