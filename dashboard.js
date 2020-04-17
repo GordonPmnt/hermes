@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {
+window.addEventListener('load', () => {
 
     /* 
         This block will be executed only if user is on the following URL: 
@@ -27,7 +27,7 @@ window.addEventListener('load', function () {
             }
         }
 
-        element.addEventListener("click", function() {
+        element.addEventListener("click", () => {
             // do something
         });
     };

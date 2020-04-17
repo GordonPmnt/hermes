@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {
+window.addEventListener('load', () => {
 
     /* 
         This block will be executed only if user is on the following URL: 
@@ -7,24 +7,24 @@ window.addEventListener('load', function () {
     if(this.window.document.URL.includes('challenge')) {
 
         if(document.getElementsByClassName("challenge__side__menu")[0]) {
-            var odysseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
-            var odysseySol = odysseySideMenu.childNodes[2]
-            var odysseyrSolUrl = odysseySol.childNodes[1]
+            let odysseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
+            let odysseySol = odysseySideMenu.childNodes[2]
+            let odysseyrSolUrl = odysseySol.childNodes[1]
     
-            var element = document.createElement("button");
-            var content = document.createTextNode("Hermes");
+            let element = document.createElement("button");
+            let content = document.createTextNode("Hermes");
             element.appendChild(content);
             element.id = "hermes-1";
     
             odysseySol.appendChild(element);
             
-            element.addEventListener("click", function() {
-                var text = odysseyrSolUrl.textContent;
+            element.addEventListener("click", () => {
+                let text = odysseyrSolUrl.textContent;
     
                 navigator.clipboard.writeText(text)
                 .then(() => {
                     console.log('Copied to clipboard:', text);
-                    var button = document.getElementById("hermes-1");
+                    let button = document.getElementById("hermes-1");
                     button.style = "color: grey"
                     button.textContent = "...copied"
                     
