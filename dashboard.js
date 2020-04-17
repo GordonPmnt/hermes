@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
         element.appendChild(content);
         element.id = "hermes-1";
        
-        var buttonsBar = document.getElementsByClassName("flickity-enabled")[0]
+        var buttonsBar = document.getElementsByClassName("carousel-cell is-selected")[0]
         buttonsBar.appendChild(element)
    };
 });
