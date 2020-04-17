@@ -12,9 +12,9 @@ window.addEventListener('load', function () {
             var odysseyrSolUrl = odysseySol.childNodes[1]
     
             var element = document.createElement("button");
-            var content = document.createTextNode("Copy");
+            var content = document.createTextNode("Hermes");
             element.appendChild(content);
-            element.id = "easy-bbtn-1";
+            element.id = "hermes-1";
     
             odysseySol.appendChild(element);
             
@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
                     button.textContent = "...copied"
                     
                     setTimeout(() => { 
-                        button.textContent = "Copy"
+                        button.textContent = "Hermes"
                         button.style = ""
                         }, 2000
                     );
