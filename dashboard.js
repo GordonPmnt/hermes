@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
         for(let i=0; i<quests.length; i++){
             let quest = quests[i]
             if(quest.nodeType === 1 && quest.className !== "quest__link started border") {
-                solutionUrl = fetch(
+                fetch(
                     `https://odyssey.wildcodeschool.com${quest.pathname}`
                 ).then(
                     response => response.url
