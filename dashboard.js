@@ -2,7 +2,7 @@ window.addEventListener('load', function () {
 
     /* 
         This block will be executed only if user is on the following URL: 
-        https://odyssey.wildcodeschool.com   
+        https://odyssey.wildcodeschool.com/
     */
    var urls = [
        "https://odyssey.wildcodeschool.com/", 
@@ -11,6 +11,12 @@ window.addEventListener('load', function () {
     ]
 
    if(urls.includes(this.window.document.URL)) {
-        //do something
+        var element = document.createElement("button");
+        var content = document.createTextNode("Hermes");
+        element.appendChild(content);
+        element.id = "hermes-1";
+       
+        var buttonsBar = document.getElementsByClassName("flickity-enabled")[0]
+        buttonsBar.appendChild(element)
    };
 });

@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
                 navigator.clipboard.writeText(text)
                 .then(() => {
                     console.log('Copied to clipboard:', text);
-                    var button = document.getElementById("easy-bbtn-1");
+                    var button = document.getElementById("hermes-1");
                     button.style = "color: grey"
                     button.textContent = "...copied"
                     
