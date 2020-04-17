@@ -18,7 +18,7 @@
           "include_globs": ["*odyssey.wildcodeschool.com/*"],
           "run_at": "document_idle",
           "all_frames": true,
-          "js": ["content.js"]
+          "js": ["content.js", "dashboard.js"]
         }
     ]
 }
