@@ -8,6 +8,10 @@
     },
     "permissions": [
     ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
     "content_scripts": [
         {
           "matches": ["https://*.odyssey.wildcodeschool.com/*"],
