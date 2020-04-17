@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
         https://odyssey.wildcodeschool.com/quests/:questId/challenge   
     */
     if(this.window.document.URL.includes('challenge')) {
-        this.alert('pouet')
+
         if(document.getElementsByClassName("challenge__side__menu")[0]) {
             var odysseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
             var odysseySol = odysseySideMenu.childNodes[2]
