@@ -16,7 +16,11 @@ window.addEventListener('load', function () {
         element.appendChild(content);
         element.id = "hermes-1";
        
-        var buttonsBar = document.getElementsByClassName("carousel-cell is-selected")[0]
-        buttonsBar.appendChild(element)
-   };
+        var carousel = document.getElementsByClassName("carousel-cell is-selected")[0]
+        carousel.appendChild(element)
+
+        element.addEventListener("click", function() {
+            // do something
+        });
+    };
 });
