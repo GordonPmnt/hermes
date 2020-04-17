@@ -31,9 +31,9 @@ window.addEventListener('load', () => {
                     response => response.url
                 ).then(
                     url => solutions.push(url)
-                )
-            }
-        }
+                );
+            };
+        };
 
         element.addEventListener("click", () => {
             console.log(solutions)
