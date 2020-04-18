@@ -30,10 +30,17 @@ window.addEventListener('load', () => {
                 navigator.clipboard.writeText(text)
                 .then(() => {
                     console.log('Copied to clipboard:', text);
-                    
-                    setTimeout(() => { 
-                        // do something
-                        }, 2000
+                    const hermesMessage = {
+                        type: 'basic',
+                        iconUrl: chrome.runtime.getURL('hermes.png'),
+                        title: 'Quest copied in clipboard!',
+                        message: 'Hermes copied your quest, you can now paste it in Slack'
+                    };
+                    chrome.runtime.sendMessage(
+                        { id: 'hermes', notification: hermesMessage }, 
+                        ( response ) => {
+                            console.log(response.status);
+                        }
                     );
                 })
                 .catch(err => {
