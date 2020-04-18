@@ -32,23 +32,47 @@ window.addEventListener('load', () => {
     
             let quests = this.document.getElementsByClassName("quests-list")[0].childNodes;
             let solutions = [];
-            console.log(quests)
+                    
             for(let i=0; i<quests.length; i++) {
                 let quest = quests[i]
                 if(quest.nodeType === 1 && quest.classList[1] !== 'started') {
+        
+                    const category = (
+                        quest
+                        .childNodes[1].childNodes[0].childNodes[1].childNodes[0]
+                        .textContent
+                        .slice(1, -1)
+                    )
+                        
                     fetch(
                         `https://odyssey.wildcodeschool.com${quest.pathname}`
                     ).then(
                         response => response.url
                     ).then(
-                        url => solutions.push(`${url}/solutions/${userId}`)
+                        url => solutions.push({
+                            category,
+                            url: `${url}/solutions/${userId}`,
+                        })
                     );
                 };
             };
-    
+        
+            const iconsUrl = chrome.runtime.getURL('icons.json');
+            let icons = {}
+            fetch(iconsUrl)
+            .then(
+                response => response.json()
+            ) 
+            .then(
+                json => icons = json
+            );
+
             element.addEventListener("click", () => {
                 if(solutions) {
-                    const text = solutions.join('\n')
+
+                    const text = solutions.map(solution => 
+                        `${icons[solution['category']]}: ${solution['url']}`
+                    ).join('\n')
                 
                     navigator.clipboard.writeText(text)
                     .then(() => {
