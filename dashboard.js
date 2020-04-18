@@ -38,7 +38,28 @@ window.addEventListener('load', () => {
         };
 
         element.addEventListener("click", () => {
-            console.log(solutions)
-        });
+            const text = solutions.join('\n')
+            
+            navigator.clipboard.writeText(text)
+            .then(() => {
+                console.log('Copied to clipboard:', text);
+                let button = document.getElementById("hermes-1");
+                button.style = "color: grey"
+                button.textContent = "...copied"
+                
+                setTimeout(() => { 
+                    button.textContent = "Hermes"
+                    button.style = ""
+                    }, 2000
+                );
+            })
+            .catch(err => {
+                console.log(err);
+                alert(`
+                    Could not copy, please check whether your 
+                    system denies clipboard permissions`
+                );
+            });
+        }, false);
     };
 });
