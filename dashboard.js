@@ -19,10 +19,12 @@ window.addEventListener('load', () => {
         let carousel = document.getElementsByClassName("carousel-cell is-selected")[0];
         carousel.appendChild(element);
 
+        const userId = document.getElementsByClassName("buttons")[0].firstChild.pathname.slice(7);
+
         let quests = this.document.getElementsByClassName("quests-list")[0].childNodes;
         let solutions = [];
-
-        for(let i=0; i<quests.length; i++){
+        
+        for(let i=0; i<quests.length; i++) {
             let quest = quests[i]
             if(quest.nodeType === 1 && quest.className !== "quest__link started border") {
                 fetch(
@@ -30,7 +32,7 @@ window.addEventListener('load', () => {
                 ).then(
                     response => response.url
                 ).then(
-                    url => solutions.push(url)
+                    url => solutions.push(`${url}/solutions/${userId}`)
                 );
             };
         };
