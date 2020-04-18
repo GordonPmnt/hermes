@@ -43,7 +43,13 @@ window.addEventListener('load', () => {
                         .textContent
                         .slice(1, -1)
                     )
-                        
+
+                    const title = (
+                        quest
+                        .childNodes[1].childNodes[0].childNodes[0]
+                        .textContent
+                    )
+
                     fetch(
                         `https://odyssey.wildcodeschool.com${quest.pathname}`
                     ).then(
@@ -51,6 +57,7 @@ window.addEventListener('load', () => {
                     ).then(
                         url => solutions.push({
                             category,
+                            title,
                             url: `${url}/solutions/${userId}`,
                         })
                     );
@@ -71,8 +78,8 @@ window.addEventListener('load', () => {
                 if(solutions) {
 
                     const text = solutions.map(solution => 
-                        `${icons[solution['category']]} ${solution['url']}`
-                    ).join('\n')
+                        `${icons[solution['category']]} ${solution['title']}: ${solution['url']}\n`
+                    ).join('')
                 
                     navigator.clipboard.writeText(text)
                     .then(() => {
