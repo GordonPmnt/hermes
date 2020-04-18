@@ -6,14 +6,18 @@
     "icons": {
       "128": "./ressources/icon-WCS.png"
     },
-    "permissions": [
-      "notifications"
-    ],
+    "permissions": ["notifications", "declarativeContent"],
     "background": {
       "scripts": ["background.js"],
       "persistent": false
     },
     "web_accessible_resources": ["hermes.png"],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "./ressources/icon-WCS.png"
+      }
+    },
     "content_scripts": [
         {
           "matches": ["https://*.odyssey.wildcodeschool.com/*"],
