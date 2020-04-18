@@ -1,0 +1,15 @@
+#hermes-1 {
+    background-color: rgb(251, 237, 170);
+    border: 0px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+#hermes-1:hover {
+    color: orange;
+}
