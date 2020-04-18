@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: rgb(251, 237, 170);
-    font-family: 'VT323', monospace;
+    font-family: 'Comic Neue', cursive;
     margin: 5%;
 }
 
@@ -23,7 +23,7 @@ img {
 }
 
 .text {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 span {
@@ -39,7 +39,6 @@ footer {
 }
 
 a {
-    font-weight: 'Roboto';
-    font-size: 1em;
+    font-size: 0.9em;
     text-decoration: none;
 }
