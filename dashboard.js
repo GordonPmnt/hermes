@@ -47,31 +47,33 @@ window.addEventListener('load', () => {
             };
     
             element.addEventListener("click", () => {
-                const text = solutions.join('\n')
+                if(solutions) {
+                    const text = solutions.join('\n')
                 
-                navigator.clipboard.writeText(text)
-                .then(() => {
-                    console.log('Copied to clipboard:', text);
-                    const hermesMessage = {
-                        type: 'basic',
-                        iconUrl: chrome.runtime.getURL('hermes.png'),
-                        title: 'Quests copied in clipboard!',
-                        message: 'Hermes copied your quests, you can now paste them in Slack'
-                    };
-                    chrome.runtime.sendMessage(
-                        { id: 'hermes', notification: hermesMessage }, 
-                        ( response ) => {
-                            console.log(response.status);
-                        }
-                    );
-                })
-                .catch(err => {
-                    console.log(err);
-                    alert(`
-                        Hermes could not copy, please check whether your 
-                        system denies clipboard permissions`
-                    );
-                });
+                    navigator.clipboard.writeText(text)
+                    .then(() => {
+                        console.log('Copied to clipboard:', text);
+                        const hermesMessage = {
+                            type: 'basic',
+                            iconUrl: chrome.runtime.getURL('hermes.png'),
+                            title: 'Quests copied in clipboard!',
+                            message: 'Hermes copied your quests, you can now paste them in Slack'
+                        };
+                        chrome.runtime.sendMessage(
+                            { id: 'hermes', notification: hermesMessage }, 
+                            ( response ) => {
+                                console.log(response.status);
+                            }
+                        );
+                    })
+                    .catch(err => {
+                        console.log(err);
+                        alert(`
+                            Hermes could not copy, please check whether your 
+                            system denies clipboard permissions`
+                        );
+                    });
+                }
             }, false);
         }
     };
