@@ -5,9 +5,17 @@
     font-size: 14px;
     border-radius: 3px;
     text-shadow: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     text-align: center;
     cursor: pointer;
+    width: 125px;
+}
+
+#hermes-1 img {
+    height: 1.5em;
+    border-radius: 100%;
+    margin-right: 8px;
 }
 
 #hermes-1:hover {

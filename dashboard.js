@@ -16,6 +16,12 @@ window.addEventListener('load', () => {
 
             let element = document.createElement("button");
             const content = document.createTextNode("Hermes");
+            
+            let picture = document.createElement("img");
+            picture.src = chrome.runtime.getURL('hermes.png');
+            picture.alt = 'Hermes logo';
+            
+            element.appendChild(picture);
             element.appendChild(content);
             element.id = "hermes-1";
            
@@ -46,20 +52,16 @@ window.addEventListener('load', () => {
                 navigator.clipboard.writeText(text)
                 .then(() => {
                     console.log('Copied to clipboard:', text);
-                    let button = document.getElementById("hermes-1");
-                    button.style = "color: grey"
-                    button.textContent = "...copied"
                     
                     setTimeout(() => { 
-                        button.textContent = "Hermes"
-                        button.style = ""
+                        // do something
                         }, 2000
                     );
                 })
                 .catch(err => {
                     console.log(err);
                     alert(`
-                        Could not copy, please check whether your 
+                        Hermes could not copy, please check whether your 
                         system denies clipboard permissions`
                     );
                 });
