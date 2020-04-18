@@ -7,19 +7,19 @@ window.addEventListener('load', () => {
     if(this.window.document.URL.includes('challenge')) {
 
         if(document.getElementsByClassName("challenge__side__menu")[0]) {
-            let odysseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
+            const odysseySideMenu = document.getElementsByClassName("challenge__side__menu")[0]
             let odysseySol = odysseySideMenu.childNodes[2]
-            let odysseyrSolUrl = odysseySol.childNodes[1]
+            const odysseyrSolUrl = odysseySol.childNodes[1]
     
             let element = document.createElement("button");
-            let content = document.createTextNode("Hermes");
+            const content = document.createTextNode("Hermes");
             element.appendChild(content);
             element.id = "hermes-1";
     
             odysseySol.appendChild(element);
             
             element.addEventListener("click", () => {
-                let text = odysseyrSolUrl.textContent;
+                const text = odysseyrSolUrl.textContent;
     
                 navigator.clipboard.writeText(text)
                 .then(() => {
