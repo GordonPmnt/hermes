@@ -1,0 +1,45 @@
+html {
+    width: 300px;
+}
+
+body {
+    background-color: rgb(251, 237, 170);
+    font-family: 'VT323', monospace;
+    margin: 5%;
+}
+
+img {
+    border-radius: 100%;
+    width: 30%;
+    height: 30%;
+    margin-right: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1.4em;
+}
+
+span {
+    border: solid 1px;
+    border-radius: 3px;
+    margin: 1px;
+    padding: 1px 5px 1px 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    font-weight: 'Roboto';
+    font-size: 1em;
+    text-decoration: none;
+}
