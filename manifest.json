@@ -1,20 +1,31 @@
 {
     "manifest_version": 2,
-    "name": "Odissey easy share",
+    "name": "Hermes",
     "version": "1.0.1",
-    "description": "Allows to easily share solutions URL's.",
+    "description": "Hermes is the messenger of gods. He will inform them once your quest is finished!",
     "icons": {
       "128": "./ressources/icon-WCS.png"
     },
-    "permissions": [
-    ],
+    "permissions": ["notifications", "declarativeContent"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "web_accessible_resources": ["hermes.png", "icons.json"],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "./ressources/icon-WCS.png"
+      }
+    },
     "content_scripts": [
         {
           "matches": ["https://*.odyssey.wildcodeschool.com/*"],
           "include_globs": ["*odyssey.wildcodeschool.com/*"],
           "run_at": "document_idle",
           "all_frames": true,
-          "js": ["contentScript.js"]
+          "js": ["challenge.js", "dashboard.js"],
+          "css": ["hermes.css"]
         }
     ]
 }
