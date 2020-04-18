@@ -69,7 +69,7 @@ window.addEventListener('load', () => {
             fetch(iconsUrl)
             .then(
                 response => response.json()
-            ) 
+            )
             .then(
                 json => icons = json
             );

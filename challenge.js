@@ -33,10 +33,29 @@ window.addEventListener('load', () => {
             .then(
                 json => icons = json
             );
-            
+
             element.addEventListener("click", () => {
-                const text = odysseyrSolUrl.textContent;
-    
+
+                const nodeText = document.getElementsByClassName('header-infos')[0]
+                    .childNodes[1]
+                    .nextSibling
+                    .innerText
+                let category = '';
+                for(let i=0; i<nodeText.length; i++) {
+                    if(
+                        nodeText.slice(i, i+6) !== ' - MàJ' && 
+                        nodeText.slice(i, i+6) !== ' - Upd'
+                    ) {
+                        category += nodeText[i]
+                    } else {
+                        break
+                    };
+                }
+
+                const icon = icons[category]
+                const title = document.getElementById('header-title').textContent.slice(0, -1)
+                const text = `${icon} ${title}: ${odysseyrSolUrl.textContent}`
+
                 navigator.clipboard.writeText(text)
                 .then(() => {
                     console.log('Copied to clipboard:', text);
