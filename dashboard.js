@@ -71,7 +71,7 @@ window.addEventListener('load', () => {
                 if(solutions) {
 
                     const text = solutions.map(solution => 
-                        `${icons[solution['category']]}: ${solution['url']}`
+                        `${icons[solution['category']]} ${solution['url']}`
                     ).join('\n')
                 
                     navigator.clipboard.writeText(text)
