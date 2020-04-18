@@ -7,7 +7,7 @@
       "128": "./ressources/icon-WCS.png"
     },
     "permissions": [
-      "storage"
+      "notifications"
     ],
     "background": {
       "scripts": ["background.js"],
