@@ -23,6 +23,16 @@ window.addEventListener('load', () => {
             element.id = "hermes-1";
     
             odysseySol.appendChild(element);
+
+            const iconsUrl = chrome.runtime.getURL('icons.json');
+            let icons = {}
+            fetch(iconsUrl)
+            .then(
+                response => response.json()
+            ) 
+            .then(
+                json => icons = json
+            );
             
             element.addEventListener("click", () => {
                 const text = odysseyrSolUrl.textContent;
