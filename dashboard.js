@@ -32,10 +32,10 @@ window.addEventListener('load', () => {
     
             let quests = this.document.getElementsByClassName("quests-list")[0].childNodes;
             let solutions = [];
-            
+            console.log(quests)
             for(let i=0; i<quests.length; i++) {
                 let quest = quests[i]
-                if(quest.nodeType === 1 && quest.className !== "quest__link started border") {
+                if(quest.nodeType === 1 && quest.classList[1] !== 'started') {
                     fetch(
                         `https://odyssey.wildcodeschool.com${quest.pathname}`
                     ).then(
