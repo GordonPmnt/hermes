@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
 
                 const icon = icons[category]
                 const title = document.getElementById('header-title').textContent.slice(0, -1)
-                const text = `${icon} ${title}: ${odysseyrSolUrl.textContent}`
+                const text = `${icon ? icon : ':question:'} ${title}: ${odysseyrSolUrl.textContent}`
 
                 navigator.clipboard.writeText(text)
                 .then(() => {
