@@ -55,5 +55,6 @@
     "Checkpoint Java": ":java:",
     "Pour poursuivre ta candidature": ":wild:",
     "Start learning with Wild Code School": ":wild:",
-    "Matplotlib && Seaborn": ":matplotlib-seaborn:"
+    "Matplotlib && Seaborn": ":matplotlib-seaborn:",
+    "Pandas": ":pandas:"
 }
