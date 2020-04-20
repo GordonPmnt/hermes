@@ -1,14 +1,17 @@
-# Odissey easy share
+# Hermes
 
-Odissey is an amazing platform, BUT, once a quest is achieved, getting validations from peers is... an odissey...
+Odyssey is an amazing platform, BUT, once a quest is achieved, getting validations from peers is... an odyssey...
 
 The aim of this project is to add little features in order to make the process easier and more user friendly.
 
 ## Available features of the version 1.0 :
 
-* Link to your solution with name of quest is now copied in your clipboard with a single click. You don't have to manually select and copy the URL anymore.
+### HERMES:
+* Hermes is listening on Odyssey website
+* You can copy paste your pending quests by clicking on Hermes button 
+  * Button on Dashbord
+  * Button on Challenge
 
-![](ressources/feature1.png)
 
 ## Getting Started
 
