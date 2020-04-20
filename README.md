@@ -8,9 +8,20 @@ The aim of this project is to add little features in order to make the process e
 
 ### HERMES:
 * Hermes is listening on Odyssey website
+
+
+![](ressources/popup.png)
+
 * You can copy paste your pending quests by clicking on Hermes button 
-  * Button on Dashbord
+  * Button on Dashboard
+  
+  
+  ![](ressources/dashboard.png)
+  
   * Button on Challenge
+  
+  
+  ![](ressources/challenge.png)
 
 
 ## Getting Started
@@ -43,4 +54,9 @@ The icon is grey because the extension is not active
 Now, if you go to Odissey website, the icon should appear colored, which means the extension properly works. You have nothing more to do, the extension is now listening on Odissey. Relax and enjoy !
 
 ![](ressources/active.png)
+
+
+Click on extension icon and check if Hermes is there:
+
+![](ressources/popup.png)
 
