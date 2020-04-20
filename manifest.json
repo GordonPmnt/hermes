@@ -6,6 +6,7 @@
     "icons": {
       "128": "./ressources/icon-WCS.png"
     },
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
     "permissions": ["notifications", "declarativeContent"],
     "background": {
       "scripts": ["background.js"],
