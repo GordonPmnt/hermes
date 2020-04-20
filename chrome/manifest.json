@@ -4,7 +4,7 @@
     "version": "1.0.1",
     "description": "Hermes is the messenger of gods. He will inform them once your quest is finished!",
     "icons": {
-      "128": "./ressources/icon-WCS.png"
+      "128": "icon-WCS.png"
     },
     "permissions": ["notifications", "declarativeContent"],
     "background": {
@@ -15,7 +15,7 @@
     "page_action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "128": "./ressources/icon-WCS.png"
+        "128": "icon-WCS.png"
       }
     },
     "content_scripts": [
