@@ -7,21 +7,27 @@ The aim of this project is to add little features in order to make the process e
 ## Available features of the version 1.0 :
 
 ### HERMES:
-* Hermes is listening on Odyssey website
+* Hermes is listening on Odyssey website:
 
 
 ![](ressources/popup.png)
 
+
+
 * You can copy paste your pending quests by clicking on Hermes button 
-  * Button on Dashboard
+  * Button on Dashboard:
   
   
   ![](ressources/dashboard.png)
   
-  * Button on Challenge
+  
+  
+  * Button on Challenge:
   
   
   ![](ressources/challenge.png)
+
+
 
 
 ## Getting Started
